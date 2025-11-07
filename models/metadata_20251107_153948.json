@@ -1,0 +1,21 @@
+{
+  "model_name": "XGBoost",
+  "timestamp": "20251107_153948",
+  "features": [
+    "volume",
+    "price_change",
+    "price_ma_7",
+    "price_ma_30",
+    "price_std_7",
+    "volume_ma_7",
+    "price_lag_1",
+    "price_lag_3",
+    "price_lag_7"
+  ],
+  "metrics": {
+    "accuracy": 0.5,
+    "cv_mean": 0.47603074772886095,
+    "cv_std": 0.05490928506156488
+  },
+  "model_path": "models/model_20251107_153948.joblib"
+}
