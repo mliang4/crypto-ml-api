@@ -1,0 +1,15 @@
+2025-11-11 14:14:44,813 - monitoring - INFO - ModelMonitor initialized
+2025-11-11 14:14:44,813 - monitoring - INFO - HealthChecker initialized
+2025-11-11 14:14:44,817 - model_registry - INFO - Model registry initialized at models/registry
+2025-11-11 14:20:10,532 - monitoring - INFO - ModelMonitor initialized
+2025-11-11 14:20:10,532 - monitoring - INFO - HealthChecker initialized
+2025-11-11 14:20:10,532 - model_registry - INFO - Model registry initialized at models/registry
+2025-11-11 14:24:28,528 - monitoring - INFO - ModelMonitor initialized
+2025-11-11 14:24:28,528 - monitoring - INFO - HealthChecker initialized
+2025-11-11 14:24:28,531 - model_registry - INFO - Model registry initialized at models/registry
+2025-11-11 14:39:50,302 - monitoring - INFO - ModelMonitor initialized
+2025-11-11 14:39:50,302 - monitoring - INFO - HealthChecker initialized
+2025-11-11 14:39:50,302 - model_registry - INFO - Model registry initialized at models/registry
+2025-11-11 14:47:27,743 - monitoring - INFO - ModelMonitor initialized
+2025-11-11 14:47:27,744 - monitoring - INFO - HealthChecker initialized
+2025-11-11 14:47:27,745 - model_registry - INFO - Model registry initialized at models/registry

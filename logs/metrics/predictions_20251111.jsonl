@@ -1,0 +1,1 @@
+{"timestamp": "2025-11-11T14:47:38.295936", "prediction": 1, "confidence": 0.62, "response_time_ms": 33.2331657409668, "features": {"volume": 45000000000.0, "price_change": 0.02, "price_ma_7": 44500.0, "price_ma_30": 43000.0, "price_std_7": 1200.0, "volume_ma_7": 25000000000.0, "price_lag_1": 44000.0, "price_lag_3": 43500.0, "price_lag_7": 42000.0}}

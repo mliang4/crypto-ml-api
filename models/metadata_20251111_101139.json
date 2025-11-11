@@ -1,0 +1,21 @@
+{
+  "model_name": "RandomForest",
+  "timestamp": "20251111_101139",
+  "features": [
+    "volume",
+    "price_change",
+    "price_ma_7",
+    "price_ma_30",
+    "price_std_7",
+    "volume_ma_7",
+    "price_lag_1",
+    "price_lag_3",
+    "price_lag_7"
+  ],
+  "metrics": {
+    "accuracy": 0.5294117647058824,
+    "cv_mean": 0.47959468902865127,
+    "cv_std": 0.03433550119509141
+  },
+  "model_path": "models/model_20251111_101139.joblib"
+}
