@@ -10,20 +10,26 @@ RUN apt-get update && apt-get install -y \
     gcc \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy requirements and install Python dependencies
+# Copy requirements and install Python dependencies to /app/venv
 COPY requirements.txt .
-RUN pip install --no-cache-dir --user -r requirements.txt
+RUN python -m venv /app/venv && \
+    /app/venv/bin/pip install --upgrade pip && \
+    /app/venv/bin/pip install --no-cache-dir -r requirements.txt
 
 # Stage 2: Production
 FROM python:3.10-slim
 
 WORKDIR /app
 
-# Copy Python dependencies from builder
-COPY --from=builder /root/.local /root/.local
+# Copy Python virtual environment from builder
+COPY --from=builder /app/venv /app/venv
 
-# Make sure scripts in .local are usable
-ENV PATH=/root/.local/bin:$PATH
+# Set PATH to use the virtual environment
+ENV PATH=/app/venv/bin:$PATH
+
+# Ensure Python is the venv python
+ENV PYTHONUNBUFFERED=1
+ENV LOG_LEVEL=INFO
 
 # Create necessary directories
 RUN mkdir -p logs logs/metrics models/registry data
@@ -50,5 +56,5 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
 ENV PYTHONUNBUFFERED=1
 ENV LOG_LEVEL=INFO
 
-# Run the production API
-CMD ["uvicorn", "src.api_production:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "2"]
+# Run the production API (use python -m to avoid permission issues)
+CMD ["python", "-m", "uvicorn", "src.api_production:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "2"]
