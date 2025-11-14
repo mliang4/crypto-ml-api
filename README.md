@@ -2,7 +2,7 @@
 
 A production-ready machine learning system for predicting cryptocurrency price movements with comprehensive monitoring, automated CI/CD, and deployment infrastructure.
 
-[![CI/CD](https://github.com/yourusername/crypto-ml-api/workflows/CI/CD%20Pipeline/badge.svg)](https://github.com/yourusername/crypto-ml-api/actions)
+[![CI/CD](https://github.com/mliang4/crypto-ml-api/workflows/CI/CD%20Pipeline/badge.svg)](https://github.com/mliang4/crypto-ml-api/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ---
@@ -109,7 +109,7 @@ crypto-ml-api/
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/crypto-ml-api.git
+git clone https://github.com/mliang4/crypto-ml-api.git
 cd crypto-ml-api
 
 # Create virtual environment
@@ -367,7 +367,7 @@ The CI/CD pipeline automatically:
 
 ### Pipeline Status
 
-Check pipeline status at: `https://github.com/yourusername/crypto-ml-api/actions`
+Check pipeline status at: `https://github.com/mliang4/crypto-ml-api/actions`
 
 ---
 
@@ -578,7 +578,7 @@ MIT License - see LICENSE file for details
 
 **Your Name** - [@yourtwitter](https://twitter.com/yourtwitter)
 
-Project Link: [https://github.com/yourusername/crypto-ml-api](https://github.com/yourusername/crypto-ml-api)
+Project Link: [https://github.com/mliang4/crypto-ml-api](https://github.com/mliang4/crypto-ml-api)
 
 ---
 
