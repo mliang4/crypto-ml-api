@@ -13,3 +13,6 @@
 2025-11-11 14:47:27,743 - monitoring - INFO - ModelMonitor initialized
 2025-11-11 14:47:27,744 - monitoring - INFO - HealthChecker initialized
 2025-11-11 14:47:27,745 - model_registry - INFO - Model registry initialized at models/registry
+2025-11-14 13:46:07,441 - monitoring - INFO - ModelMonitor initialized
+2025-11-14 13:46:07,449 - monitoring - INFO - HealthChecker initialized
+2025-11-14 13:46:07,450 - model_registry - INFO - Model registry initialized at models/registry
